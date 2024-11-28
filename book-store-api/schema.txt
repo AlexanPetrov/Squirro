@@ -1,0 +1,41 @@
+*** DB Diagram Visualization Tool: https://dbdiagram.io/home
+
+Table stores {
+  id integer [primary key]
+  name varchar
+  website varchar
+  rating integer
+  store_image text
+  establishment_date date
+  country_id integer
+}
+
+Table countries {
+  id integer [primary key]
+  code char(2)
+}
+
+Table books {
+  id integer [primary key]
+  name varchar
+  copies_sold integer
+  author_id integer
+}
+
+Table authors {
+  id integer [primary key]
+  full_name varchar
+}
+
+Table store_books {
+  store_id integer
+  book_id integer
+}
+
+Ref: stores.country_id > countries.id // many-to-one
+
+Ref: store_books.store_id > stores.id // many-to-many via join table
+
+Ref: store_books.book_id > books.id // many-to-many via join table
+
+Ref: books.author_id > authors.id // many-to-one

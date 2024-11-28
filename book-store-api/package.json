@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.21.1",
     "fake-json-api-server": "^1.7.0"
   }
 }

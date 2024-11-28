@@ -1,0 +1,193 @@
+/* Styling sheet for the application */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+header {
+  background-color: #4f46e5;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+div {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.store-container {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.store-header {
+  display: flex;
+  align-items: center;
+  gap: 700px;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 10px;
+}
+
+.store-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e5e7eb;
+}
+
+.flag-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #1d4ed8;
+}
+
+.stars {
+  font-size: 1.2rem;
+  color: #fbbf24;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f1f5f9;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f3f4f6;
+}
+
+.store-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 20px;
+  position: relative;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-left span,
+.footer-left a {
+  font-size: 0.9rem;
+  color: #6b7280;
+  text-decoration: none;
+}
+
+.footer-left a {
+  color: #2563eb;
+}
+
+.footer-left a:hover {
+  text-decoration: underline;
+}
+
+.footer-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.email-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  margin-top: 20px;
+  border-top: 4px solid #4f46e5;
+}
+
+@media (max-width: 768px) {
+  .store-container {
+    padding: 15px;
+  }
+
+  .store-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .store-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .footer-left a,
+  .footer-left span {
+    font-size: 0.8rem;
+  }
+
+  .email-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  div {
+    padding: 10px;
+  }
+
+  .store-container {
+    padding: 10px;
+  }
+
+  table th,
+  table td {
+    font-size: 0.9rem;
+  }
+
+  .footer-left a,
+  .footer-left span {
+    font-size: 0.75rem;
+  }
+}
